@@ -1,7 +1,4 @@
-version: '2'
-
-services:
-  nginx:
+nginx:
     container_name: nginx-server
     build: .
     volumes: 
