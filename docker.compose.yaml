@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  nginx:
+    container_name: nginx-server
+    build: .
+    volumes: 
+      - /src/docker/nginx/sites-enabled:/etc/nginx/sites-enabled
+    ports:
+      - "80:80"
